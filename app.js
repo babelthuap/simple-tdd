@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/books-test');
+mongoose.connect(process.env.MONGO_URL || 'mongodb://localhost/books');
 
 var app = express();
 
